@@ -1,0 +1,70 @@
+{
+  "name": "bear-ui",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git cz",
+    "dev": "pnpm -C play dev",
+    "build": "pnpm -C play build",
+    "preview": "pnpm -C play preview",
+    "docs:dev": "pnpm -C docs dev",
+    "docs:build": "pnpm -C docs build",
+    "docs:serve": "pnpm -C docs serve",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*",
+    "play",
+    "docs"
+  ],
+  "dependencies": {
+    "@bear-ui/components": "workspace:*",
+    "@bear-ui/hooks": "workspace:*",
+    "@bear-ui/locale": "workspace:*",
+    "@bear-ui/theme-chalk": "workspace:*",
+    "@bear-ui/utils": "workspace:*",
+    "@vueuse/core": "^9.10.0",
+    "async-validator": "^4.2.5",
+    "typescript": "^4.9.4",
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@bear-ui/eslint-config": "workspace:*",
+    "@types/node": "^18.11.18",
+    "commitizen": "^4.2.6",
+    "cz-git": "^1.4.1",
+    "eslint": "^8.32.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.0",
+    "sass": "^1.57.1",
+    "unplugin-vue-define-options": "^0.6.2",
+    "vite": "^4.0.0",
+    "vitest": "^0.27.2"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LittlebearHat/bear-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LittlebearHat/bear-ui/issues"
+  },
+  "homepage": "https://github.com/LittlebearHat/bear-ui#readme"
+}

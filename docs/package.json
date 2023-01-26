@@ -1,0 +1,21 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev .",
+    "build": "vitepress build .",
+    "serve": "vitepress serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "unplugin-vue-define-options": "^0.6.2",
+    "vitepress": "1.0.0-alpha.40"
+  },
+  "dependencies": {
+    "vue": "^3.2.45"
+  }
+}
