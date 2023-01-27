@@ -1,4 +1,9 @@
 import { defineConfig } from 'vitepress'
+import {
+  containerPreview,
+  componentPreview
+} from '@vitepress-demo-preview/plugin'
+import { mdPlugin } from './configs/plugins'
 
 import nav from './configs/nav'
 import sidebar from './configs/sidebar'
@@ -29,5 +34,10 @@ export default defineConfig({
   },
   markdown: {
     // theme: { light: 'github-light', dark: 'github-dark' }
+    config(md) {
+      mdPlugin(md)
+      md.use(containerPreview)
+      md.use(componentPreview)
+    }
   }
 })

@@ -2,7 +2,7 @@
   "name": "docs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "dev": "vitepress dev .",
     "build": "vitepress build .",
@@ -12,10 +12,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "markdown-it": "^13.0.1",
+    "markdown-it-container": "^3.0.0",
     "unplugin-vue-define-options": "^0.6.2",
-    "vitepress": "1.0.0-alpha.40"
+    "@vitepress-demo-preview/component": "^2.1.0",
+    "@vitepress-demo-preview/plugin": "^1.1.6"
   },
   "dependencies": {
-    "vue": "^3.2.45"
+    "vitepress": "1.0.0-alpha.40"
   }
 }

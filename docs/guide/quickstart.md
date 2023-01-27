@@ -4,7 +4,7 @@
 
 ## 用法
 
-...js
+...
 <template>
 <b-icon :color="'red'">111</b-icon>
 <b-icon>
